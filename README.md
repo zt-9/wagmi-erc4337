@@ -58,14 +58,14 @@ This is a simple frontend application that enables users to send ERC-4337 user o
 Before sending user operations, ensure your smart contract account is funded. Send ETH to your smart contract account address to cover transaction costs.
 
 ### Step 2: Send Your First User Operation
-1. send your first ERC-4337 user operation by just signing the User Operation.
+Send your first ERC-4337 user operation by just signing the User Operation.
 
 ---
 
 ## Dependencies
-- **[wagmi](https://wagmi.sh/)**: React hooks for Ethereum.
-- **[viem](https://viem.sh/)**: Type-safe, lightweight, and fast library for interacting with Ethereum.
-- **[permissionless.js](https://docs.pimlico.io/)**: Library for interacting with Pimlico's APIs.
+- **[wagmi](https://wagmi.sh/)**
+- **[viem](https://viem.sh/)**
+- **[permissionless.js](https://docs.pimlico.io/)**
 
 ---
 
