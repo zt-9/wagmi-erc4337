@@ -17,7 +17,7 @@ This is a simple frontend application that enables users to send ERC-4337 user o
      
      Example:
      ```plaintext
-     PIMLICO_API_KEY=your_api_key_here
+     VITE_PIMLICO_API_KEY=your_api_key_here
      ```
 
 3. **Install Dependencies**:
@@ -73,10 +73,11 @@ Before sending user operations, ensure your smart contract account is funded. Se
 ## How It Works
 
 ### Step 1: Get Public and Private Clients
+Use wagmi to get the viem publicClient and walletClient, which will be used for creating the ERC-4337 bundler and account.
 
-Use wagmi to get the viem public and wallet clients:
 ```js
 import { usePublicClient, useWalletClient } from "wagmi";
+
 const publicClient = usePublicClient();
 const { data: walletClient } = useWalletClient();
 ```
@@ -114,6 +115,7 @@ This will not deploy a smart contract account if it does not exist. It simply lo
 Create the bundler client with pimlico RPC
 ```js
 import { createBundlerClient } from "viem/account-abstraction";
+
 const bundlerClient = createBundlerClient({
   account: smartAccount,
   client: publicClient,
