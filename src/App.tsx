@@ -4,11 +4,11 @@ import { Account } from "./components/Account";
 import { Connect } from "./components/Connect";
 
 export default function App() {
-  const { isConnected } = useAccount();
-  return (
-    <>
-      {isConnected ? <Account /> : <Connect />}
-      {isConnected && <SendTransaction />}
-    </>
-  );
+	const { isConnected } = useAccount();
+	return (
+		<>
+			{isConnected ? <Account /> : <Connect />}
+			{isConnected && <SendTransaction />}
+		</>
+	);
 }
