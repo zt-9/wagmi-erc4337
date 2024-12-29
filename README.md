@@ -58,8 +58,7 @@ This is a simple frontend application that enables users to send ERC-4337 user o
 Before sending user operations, ensure your smart contract account is funded. Send ETH to your smart contract account address to cover transaction costs.
 
 ### Step 2: Send Your First User Operation
-1. Access the frontend application by visiting the local development server (default: `http://localhost:3000`).
-2. Use the provided UI to configure and send your first ERC-4337 user operation.
+1. send your first ERC-4337 user operation by just signing the User Operation.
 
 ---
 
@@ -72,7 +71,7 @@ Before sending user operations, ensure your smart contract account is funded. Se
 
 ## How It Works
 
-### Step 1: Get Public and Private Clients
+### Step 1: Get Public and Wallet Clients
 Use wagmi to get the viem publicClient and walletClient, which will be used for creating the ERC-4337 bundler and account.
 
 ```js
